@@ -2,13 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 70%;
     margin-bottom: 30px;
     background-color: white;
     padding: 20px;
     border: none;
     border-radius: 5px;
+    
 }
+
+.option{
+    display: flex;
+    justify-content: center;
+}
+
 
 .option p{
     margin: 0;
