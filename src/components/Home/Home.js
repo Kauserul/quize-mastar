@@ -6,7 +6,9 @@ import './Home.css'
 const Home = () => {
     const apiQuizs = useLoaderData();
     const quizs = apiQuizs.data
-    console.log(quizs);
+    // console.log(quizs);
+
+
     return (
         <div>
             <div className='home container mt-3'>
@@ -15,11 +17,12 @@ const Home = () => {
                     <p>The duty of the Quizmaster is to round out the evaluation portion of the meeting in an upbeat way, testing the audience’s listening skills.  It is a question-and-answer period, highlighting interesting information learned throughout the meeting. You lead by exemplifying your own active listening.</p>
                 </div>
             </div>
-            <div>
+            <div className='quizs container mt-5 mb-5'>
                 {
                     quizs.map(quiz => <Quiz 
                         key={quiz.id}
                         quiz={quiz}
+                        
                     ></Quiz>)
                 }
             </div>

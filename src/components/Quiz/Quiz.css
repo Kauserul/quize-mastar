@@ -1,0 +1,22 @@
+.single-card{
+    border: 1px solid lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.single-card img{
+    width: 200px;
+    height: 200px;
+}
+
+.quiz-info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz-info button{
+    border: none;
+    background-color: aqua;
+    border-radius: 10px;
+}
