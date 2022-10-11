@@ -13,10 +13,12 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .quiz-info button{
     border: none;
     background-color: aqua;
-    border-radius: 10px;
+    border-radius: 5px;
+    font-size: 20px;
 }

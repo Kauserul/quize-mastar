@@ -1,33 +1,28 @@
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import './NavBar.css'
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-light">
-            <div className="container">
-                <div className='site-name'>
-                    <Link className="navbar-brand" href="#">QuizMasters</Link>
-                </div>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse some-routes" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" href="#">More</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/blog">Blog</Link>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Container>
+                <Navbar.Brand href="#home">QuizMaster</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto">
+                        
+                    </Nav>
+                    <Nav className='link'>
+                        <Link className='mb-3 mt-2' to='/'>Home</Link>
+                        <Link className='mb-3 mt-2' to='/statistics'>Statistics</Link>
+                        <Link className='mb-3 mt-2' to='/blog'>Blog</Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }
 

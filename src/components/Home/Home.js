@@ -21,8 +21,7 @@ const Home = () => {
                 {
                     quizs.map(quiz => <Quiz 
                         key={quiz.id}
-                        quiz={quiz}
-                        
+                        quiz={quiz}                      
                     ></Quiz>)
                 }
             </div>

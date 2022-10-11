@@ -12,19 +12,21 @@ const QuestionDetails = ({ questions }) => {
     const handleRight = (option) =>{
         const quiz = questions.correctAnswer === option;
         if(quiz){
-            alert('Right Ans')
+            // alert('Right Ans');
+            toast.success('Right Ans', {autoClose:1000})
         }
         else{
-            alert('Wrong Ans')
+            // alert('Wrong Ans')
+            toast.error('Wrong Ans', {autoClose: 1000})
         }
     }
 
     const handleEyeButton = () =>{
-        alert(`${questions.correctAnswer}`)
+        toast.success(`${questions.correctAnswer}`, {autoClose : 2000})
     }
 
     return (
-        <div className='container mt-5 question'>
+        <div className='container mt-5 question rounded'>
             <div className='d-flex justify-content-between align-items-center'>
                 <h3 className='w-75 m-auto'>{question}</h3>
                 <FontAwesomeIcon onClick={handleEyeButton} icon={faEye}></FontAwesomeIcon>
