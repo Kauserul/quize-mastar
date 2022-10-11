@@ -5,7 +5,7 @@ import QuestionDetails from '../QuestionDetails/QuestionDetails';
 const QuizQuestion = () => {
     const QuizQuestion = useLoaderData()
     const questions = QuizQuestion.data.questions;
-    console.log(questions)
+    // console.log(questions)
     return (
         <div>
             {

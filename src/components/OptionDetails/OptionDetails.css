@@ -1,4 +1,4 @@
-.option{
+.option button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +6,7 @@
     margin-bottom: 30px;
     background-color: white;
     padding: 20px;
+    border: none;
 }
 
 .option p{

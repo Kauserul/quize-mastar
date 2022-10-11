@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Quiz.css'
 
-const Quiz = ({ quiz,handleButton }) => {
+const Quiz = ({ quiz }) => {
     // console.log(handleQuiz);
     const { logo, name, id } = quiz
 
-    
+    // console.log(quiz);
 
     return (
         <div className='all-card'>
