@@ -9,7 +9,7 @@ function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">QuizMaster</Navbar.Brand>
+                <Navbar.Brand href="#home" className='fs-3'>QuizMasters</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
