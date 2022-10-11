@@ -5,11 +5,13 @@ import Main from './layouts/Main';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import QuizQuestion from './components/QuizQuestion/QuizQuestion';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   const router = createBrowserRouter([
     {
       path : '/',
+      errorElement : <ErrorPage></ErrorPage>,
       element : <Main></Main>,
       children : [
         {
