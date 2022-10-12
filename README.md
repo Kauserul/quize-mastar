@@ -69,3 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+
+
+### Website Name : QuizMasters
+### Live Website : https://elegant-seahorse-3061b6.netlify.app/statistics
+### website Description
+The duty of the Quizmaster is to round out the evaluation portion of the meeting in an upbeat way, testing the audience’s listening skills. It is a question-and-answer period, highlighting interesting information learned throughout the meeting. You lead by exemplifying your own active listening.
+
+
+
